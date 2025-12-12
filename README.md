@@ -31,13 +31,13 @@ Diffusion models can generate high-quality images, but inference is expensive be
 
 ### Offline profiling
 1. **Service-time profiling:** measure runtime for DDPM and DDIM across multiple step counts and fit a simple model  
-   \[
+   $$
    S(n) \approx \alpha + \beta n
-   \]
+   $$
 2. **Quality profiling:** build a quality grid (e.g., CLIPScore and FID) for selected (sampler, steps) settings.
 
 ### Online simulation
-- Jobs arrive as a **Poisson process** with rate \(\lambda\).
+- Jobs arrive as a **Poisson process** with rate $\lambda$.
 - A single-server FIFO queue processes jobs one-by-one.
 - Each job’s service time is sampled from the fitted service-time model.
 
@@ -65,7 +65,6 @@ Quality for adaptive policies is summarized as **effective policy quality**: ave
 
 ## How to run
 
-### Option A — Run the notebook
 1. Create an environment and install dependencies (example with conda):
    ```bash
    conda create -n queue-diffusion python=3.10 -y
@@ -80,16 +79,11 @@ Quality for adaptive policies is summarized as **effective policy quality**: ave
    ```
 3. Open `notebooks/<your_notebook_name>.ipynb` and run cells.
 
-### Option B — Reproduce plots only
-
-* If your notebook exports plots into `plots/`, you can rerun the “plotting / export” sections and regenerate report figures.
-
 ---
 
 ## Data and pretrained models
 
-We use publicly available datasets and pretrained diffusion checkpoints (see the report and `bib/` for citations).
-If your notebook downloads data/models automatically, running it once should fetch them into the local cache.
+We use publicly available datasets and pretrained diffusion checkpoints (see the report for citations).
 
 ---
 
@@ -98,19 +92,6 @@ If your notebook downloads data/models automatically, running it once should fet
 * We use fixed random seeds where possible to reduce variance across runs.
 * Runtime measurements can still vary across hardware and environment (GPU, drivers, background load).
 * Queue simulation uses stochastic arrivals; results are best interpreted from multiple runs or averaged summaries (as in the report).
-
----
-
-## Citation
-
-If you want to cite this project in a report/presentation, you can reference the repository and the included paper PDF.
-(If you want, I can also generate a small `CITATION.cff` file for GitHub.)
-
----
-
-## License
-
-Add your preferred license (e.g., MIT). If unsure, MIT is a common default for course projects.
 
 ---
 
