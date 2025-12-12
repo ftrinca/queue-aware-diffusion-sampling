@@ -23,12 +23,8 @@ Diffusion models can generate high-quality images, but inference is expensive be
 - `plots/`  
   - Exported figures used in the report/slides.
 - `logs/`  
-  - Logs / raw outputs from runs (if applicable).
-- `bib/`  
-  - BibTeX entries for datasets, models, and related work (if applicable).
-
-(Adapt folder names if yours differ—this README is structured to match what you described.)
-
+  - Logs / raw outputs from runs.
+  - 
 ---
 
 ## Method overview
@@ -75,7 +71,7 @@ Quality for adaptive policies is summarized as **effective policy quality**: ave
    conda create -n queue-diffusion python=3.10 -y
    conda activate queue-diffusion
    pip install -r requirements.txt
-````
+    ````
 
 2. Start Jupyter:
 
