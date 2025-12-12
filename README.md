@@ -43,10 +43,7 @@ settings when the queue grows, preventing latency from exploding under load.
 
 1. **Service-time profiling**  
    Measure inference runtime for DDPM and DDIM across multiple step counts and fit a
-   simple linear model:
-   $$
-   S(n) \approx \alpha + \beta n
-   $$
+   simple linear model: \(S(n) \approx \alpha + \beta n\)
 
 2. **Quality profiling**  
    Build a quality grid using standard metrics (CLIPScore and FID) for selected
