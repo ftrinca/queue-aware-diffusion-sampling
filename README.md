@@ -30,6 +30,8 @@ settings when the queue grows, preventing latency from exploding under load.
   - Presentation slides (to be added).
 - `qads.ipynb`  
   - Main Jupyter notebook containing all experiments and plots.
+- `requirements.txt`
+  - Requirements needed to run the notebook
 - `plots/`  
   - Exported figures used in the report and slides.
 - `logs/`  
