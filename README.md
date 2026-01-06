@@ -134,5 +134,4 @@ All datasets and models are cited in the report and listed in the bibliography.
 
 ## Contact
 
-* **Flaminia Trinca** — [flaminia.trinca@students.unibe.ch](mailto:flaminia.trinca@students.unibe.ch)
-* **Allizha Theiventhiram** — [allizha.theiventhiram@unine.ch](mailto:allizha.theiventhiram@unine.ch)
+* **Flaminia Trinca** — [flaminia.trinca@gmail.com](mailto:flaminia.trinca@gmail.com)
